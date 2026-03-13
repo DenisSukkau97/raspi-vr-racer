@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>VR-Racer Live</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="login-active" onload="if(localStorage.getItem('jwt_token') && Date.now() < parseInt(localStorage.getItem('jwt_expiry') || 0)) {
+        document.getElementById('login-bg-video')?.remove();
+        document.body.classList.remove('login-active');
+      }">  <!-- Start im Login-Zustand -->
+
+<!-- 🔥 Hintergrundvideo nur im Loginbereich -->
+<video id="login-bg-video" autoplay muted loop playsinline>
+  <source src="../static/media/vr_race_loop.mp4" type="video/mp4">
+</video>
+
+
+<header>
+  <img src="../static/media/logo.png" alt="VR-Racer Logo" class="logo">
+  <h1>🚗 VR-Racer Live</h1>
+</header>
+
+<!-- LOGIN -->
+<div id="login-card" class="card">
+  <h2>🔑 Login</h2>
+  <div class="password-wrapper">
+    <input type="text" id="username" placeholder="Benutzername" required>
+  </div>
+  <div class="password-wrapper">
+    <input type="password" id="password" placeholder="Passwort eingeben" required>
+    <button type="button" id="toggle-password">👁️</button>
+  </div>
+  <button onclick="login()">Anmelden</button>
+  <p id="login-status"></p>
+  <p class="switch-text">Noch kein Konto? <a href="#" class="switch-link" onclick="switchToRegister()">Registrieren</a></p>
+</div>
+
+<!-- REGISTRIERUNG -->
+<div id="register-card" class="card" style="display:none;">
+  <h2>🆕 Konto anlegen</h2>
+  <div class="password-wrapper">
+    <input type="text" id="new-username" placeholder="Benutzername" required>
+  </div>
+  <div class="register-password-wrapper">
+    <input type="password" id="new-password" placeholder="Passwort erstellen" required>
+    <button type="button" id="toggle-new-password">👁️</button>
+  </div>
+  <button onclick="registerUser()">Registrieren</button>
+  <p id="register-status"></p>
+  <p class="switch-text">Schon ein Konto? <a href="#" class="switch-link" onclick="switchToLogin()">Zurück zum Login</a></p>
+</div>
+
+<!-- STREAM -->
+<div id="stream-card" class="card" style="display:none;">
+  <div id="player-wrap">
+    <video id="video" autoplay playsinline ondblclick="toggleFullscreen()"></video>
+  </div>
+  <div class="status-bar">
+    <p id="status">🔄 Verbinde...</p>
+    <div class="hud">📡 -- ms | 🎥 -- FPS</div>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-overlay">
+  <div id="admin-popup">
+    <h2>👑 Benutzerverwaltung</h2>
+    <p>Hier kannst du Benutzer anzeigen und löschen.</p>
+    <div id="admin-list"><p>⏳ Lade Benutzer...</p></div>
+    <div class="admin-actions">
+      <button onclick="loadAdminPanel()">🔄 Aktualisieren</button>
+      <button onclick="closeAdminPanel()">❌ Schließen</button>
+    </div>
+  </div>
+</div>
+
+<!-- FEEDBACK -->
+<div id="ui-feedback" class="ui-feedback"></div>
+
+<footer>
+  <p>Made for <strong>VR-Cars</strong> | Powered by VR-Racer 🚀</p>
+</footer>
+
+<script src="../static/js/client1.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# 03.06.26 // Oliver / Denis 
+#############################################################################
+
+# Requirements
+
+#############################################################################
+
+# requirements.txt
+# Installiere mit: pip install -r requirements.txt
+
+gpiozero>=2.0.0          # GPIO-Steuerung für Servo und PWM
+lgpio>=0.2.2             # Low-level GPIO für Raspberry Pi 5 (benötigt für gpiozero)
+evdev>=1.6.0             # Direkter Zugriff auf Linux-Input-Events (Controller)
+pygame>=2.5.0            # Optional – falls du später die pygame-Variante testen willst
+
+Installation : 
+source venv/bin/activate
+pip install -r requirements.txt

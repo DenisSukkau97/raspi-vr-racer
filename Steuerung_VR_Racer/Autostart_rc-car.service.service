@@ -1,0 +1,44 @@
+# 06.03.26 // Oliver / Denis 
+########################################################
+# AUTOSTART SKRIPT
+########################################################
+
+# Bash befehl: 
+
+sudo nano /etc/systemd/system/Autostart_rc-car.service
+#######################################################
+
+
+Inhalt: 
+
+[Unit]
+Description=RC-Car PS5 Steuerung
+After=network.target bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+Type=simple
+User=vrracer
+Group=vrracer
+WorkingDirectory=/home/Steuerung
+ExecStartPre=/bin/sleep 12
+ExecStart=/home/Steuerung/venv/bin/python3 /home/Steuerung/rc_car_ps_controller.py
+Restart=always
+RestartSec=8
+StandardOutput=append:/home/Steuerung/autostart.log
+StandardError=append:/home/Steuerung/autostart.log
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+Aktivieren: 
+
+# Bash Befehl 
+
+sudo systemctl daemon-reload
+sudo systemctl enable Autostart_rc-car.service
+sudo systemctl start Autostart_rc-car.service
+

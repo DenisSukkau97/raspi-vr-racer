@@ -1,0 +1,34 @@
+# 03.06.26 // Oliver / Denis 
+
+###################################
+Abhängigkeiten 
+
+################################
+2.Abhängigkeiten 
+
+Bash befehl: 
+
+      pip install -r requirements.txt
+
+Oder einzeln : 
+
+      pip install gpiozero lgpio evdev
+
+
+
+	3. Systempakete 
+
+      Bash befehl: 
+
+          sudo apt update
+          sudo apt install python3-lgpio liblgpio-dev
+
+
+
+	    4. Programm 
+          
+            Bash befehl: 
+
+            	python3 rc_car_ps_controller.py
+	
+
