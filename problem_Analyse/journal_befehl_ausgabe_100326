@@ -1,0 +1,146 @@
+vrracersbs@vrracer:~ $ journalctl
+Mär 10 18:21:05 vrracer kernel: Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+Mär 10 18:21:05 vrracer kernel: Linux version 6.12.62+rpt-rpi-2712 (serge@raspberrypi.com) (aarch64-linux-gnu-gcc-14 (D>
+Mär 10 18:21:05 vrracer kernel: KASLR enabled
+Mär 10 18:21:05 vrracer kernel: random: crng init done
+Mär 10 18:21:05 vrracer kernel: Machine model: Raspberry Pi 5 Model B Rev 1.1
+Mär 10 18:21:05 vrracer kernel: efi: UEFI not found.
+Mär 10 18:21:05 vrracer kernel: Reserved memory: created CMA memory pool at 0x000000003a000000, size 64 MiB
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x000000003a000000..0x000000003dffffff (65536 KiB) map reusable linux>
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x0000000000000000..0x000000000007ffff (512 KiB) nomap non-reusable a>
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x000000003fd165c0..0x000000003fd165fd (0 KiB) nomap non-reusable nvr>
+Mär 10 18:21:05 vrracer kernel: NUMA: Faking a node at [mem 0x0000000000000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Faking node 0 at [mem 0x0000000000000000-0x000000007fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 1 at [mem 0x0000000080000000-0x00000000ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 2 at [mem 0x0000000100000000-0x000000017fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 3 at [mem 0x0000000180000000-0x00000001ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 4 at [mem 0x0000000200000000-0x000000027fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 5 at [mem 0x0000000280000000-0x00000002ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 6 at [mem 0x0000000300000000-0x000000037fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 7 at [mem 0x0000000380000000-0x00000003ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: NUMA: Initialized distance table, cnt=8
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(0) allocated [mem 0x7fffd200-0x7fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(1) allocated [mem 0xffffd200-0xffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(2) allocated [mem 0x17fffd200-0x17fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(3) allocated [mem 0x1ffffd200-0x1ffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(4) allocated [mem 0x27fffd200-0x27fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(5) allocated [mem 0x2ffffd200-0x2ffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(6) allocated [mem 0x37fffd200-0x37fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(7) allocated [mem 0x3ff799200-0x3ff79bfff]
+Mär 10 18:21:05 vrracer kernel: Zone ranges:
+Mär 10 18:21:05 vrracer kernel:   DMA      [mem 0x0000000000000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel:   DMA32    empty
+Mär 10 18:21:05 vrracer kernel:   Normal   [mem 0x0000000100000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Movable zone start for each node
+Mär 10 18:21:05 vrracer kernel: Early memory node ranges
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000000000000-0x000000000007ffff]
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000000080000-0x000000003f7fffff]
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000040000000-0x000000007fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   1: [mem 0x0000000080000000-0x00000000ffffffff]
+lines 1-39...skipping...
+Mär 10 18:21:05 vrracer kernel: Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+Mär 10 18:21:05 vrracer kernel: Linux version 6.12.62+rpt-rpi-2712 (serge@raspberrypi.com) (aarch64-linux-gnu-gcc-14 (D>
+Mär 10 18:21:05 vrracer kernel: KASLR enabled
+Mär 10 18:21:05 vrracer kernel: random: crng init done
+Mär 10 18:21:05 vrracer kernel: Machine model: Raspberry Pi 5 Model B Rev 1.1
+Mär 10 18:21:05 vrracer kernel: efi: UEFI not found.
+Mär 10 18:21:05 vrracer kernel: Reserved memory: created CMA memory pool at 0x000000003a000000, size 64 MiB
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x000000003a000000..0x000000003dffffff (65536 KiB) map reusable linux>
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x0000000000000000..0x000000000007ffff (512 KiB) nomap non-reusable a>
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x000000003fd165c0..0x000000003fd165fd (0 KiB) nomap non-reusable nvr>
+Mär 10 18:21:05 vrracer kernel: NUMA: Faking a node at [mem 0x0000000000000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Faking node 0 at [mem 0x0000000000000000-0x000000007fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 1 at [mem 0x0000000080000000-0x00000000ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 2 at [mem 0x0000000100000000-0x000000017fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 3 at [mem 0x0000000180000000-0x00000001ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 4 at [mem 0x0000000200000000-0x000000027fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 5 at [mem 0x0000000280000000-0x00000002ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 6 at [mem 0x0000000300000000-0x000000037fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 7 at [mem 0x0000000380000000-0x00000003ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: NUMA: Initialized distance table, cnt=8
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(0) allocated [mem 0x7fffd200-0x7fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(1) allocated [mem 0xffffd200-0xffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(2) allocated [mem 0x17fffd200-0x17fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(3) allocated [mem 0x1ffffd200-0x1ffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(4) allocated [mem 0x27fffd200-0x27fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(5) allocated [mem 0x2ffffd200-0x2ffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(6) allocated [mem 0x37fffd200-0x37fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(7) allocated [mem 0x3ff799200-0x3ff79bfff]
+Mär 10 18:21:05 vrracer kernel: Zone ranges:
+Mär 10 18:21:05 vrracer kernel:   DMA      [mem 0x0000000000000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel:   DMA32    empty
+Mär 10 18:21:05 vrracer kernel:   Normal   [mem 0x0000000100000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Movable zone start for each node
+Mär 10 18:21:05 vrracer kernel: Early memory node ranges
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000000000000-0x000000000007ffff]
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000000080000-0x000000003f7fffff]
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000040000000-0x000000007fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   1: [mem 0x0000000080000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel:   node   2: [mem 0x0000000100000000-0x000000017fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   3: [mem 0x0000000180000000-0x00000001ffffffff]
+Mär 10 18:21:05 vrracer kernel:   node   4: [mem 0x0000000200000000-0x000000027fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   5: [mem 0x0000000280000000-0x00000002ffffffff]
+Mär 10 18:21:05 vrracer kernel:   node   6: [mem 0x0000000300000000-0x000000037fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   7: [mem 0x0000000380000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 0 [mem 0x0000000000000000-0x000000007fffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 1 [mem 0x0000000080000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 2 [mem 0x0000000100000000-0x000000017fffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 3 [mem 0x0000000180000000-0x00000001ffffffff]
+lines 1-49...skipping...
+Mär 10 18:21:05 vrracer kernel: Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+Mär 10 18:21:05 vrracer kernel: Linux version 6.12.62+rpt-rpi-2712 (serge@raspberrypi.com) (aarch64-linux-gnu-gcc-14 (D>
+Mär 10 18:21:05 vrracer kernel: KASLR enabled
+Mär 10 18:21:05 vrracer kernel: random: crng init done
+Mär 10 18:21:05 vrracer kernel: Machine model: Raspberry Pi 5 Model B Rev 1.1
+Mär 10 18:21:05 vrracer kernel: efi: UEFI not found.
+Mär 10 18:21:05 vrracer kernel: Reserved memory: created CMA memory pool at 0x000000003a000000, size 64 MiB
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x000000003a000000..0x000000003dffffff (65536 KiB) map reusable linux>
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x0000000000000000..0x000000000007ffff (512 KiB) nomap non-reusable a>
+Mär 10 18:21:05 vrracer kernel: OF: reserved mem: 0x000000003fd165c0..0x000000003fd165fd (0 KiB) nomap non-reusable nvr>
+Mär 10 18:21:05 vrracer kernel: NUMA: Faking a node at [mem 0x0000000000000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Faking node 0 at [mem 0x0000000000000000-0x000000007fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 1 at [mem 0x0000000080000000-0x00000000ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 2 at [mem 0x0000000100000000-0x000000017fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 3 at [mem 0x0000000180000000-0x00000001ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 4 at [mem 0x0000000200000000-0x000000027fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 5 at [mem 0x0000000280000000-0x00000002ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 6 at [mem 0x0000000300000000-0x000000037fffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: Faking node 7 at [mem 0x0000000380000000-0x00000003ffffffff] (2048MB)
+Mär 10 18:21:05 vrracer kernel: NUMA: Initialized distance table, cnt=8
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(0) allocated [mem 0x7fffd200-0x7fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(1) allocated [mem 0xffffd200-0xffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(2) allocated [mem 0x17fffd200-0x17fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(3) allocated [mem 0x1ffffd200-0x1ffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(4) allocated [mem 0x27fffd200-0x27fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(5) allocated [mem 0x2ffffd200-0x2ffffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(6) allocated [mem 0x37fffd200-0x37fffffff]
+Mär 10 18:21:05 vrracer kernel: NODE_DATA(7) allocated [mem 0x3ff799200-0x3ff79bfff]
+Mär 10 18:21:05 vrracer kernel: Zone ranges:
+Mär 10 18:21:05 vrracer kernel:   DMA      [mem 0x0000000000000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel:   DMA32    empty
+Mär 10 18:21:05 vrracer kernel:   Normal   [mem 0x0000000100000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Movable zone start for each node
+Mär 10 18:21:05 vrracer kernel: Early memory node ranges
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000000000000-0x000000000007ffff]
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000000080000-0x000000003f7fffff]
+Mär 10 18:21:05 vrracer kernel:   node   0: [mem 0x0000000040000000-0x000000007fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   1: [mem 0x0000000080000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel:   node   2: [mem 0x0000000100000000-0x000000017fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   3: [mem 0x0000000180000000-0x00000001ffffffff]
+Mär 10 18:21:05 vrracer kernel:   node   4: [mem 0x0000000200000000-0x000000027fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   5: [mem 0x0000000280000000-0x00000002ffffffff]
+Mär 10 18:21:05 vrracer kernel:   node   6: [mem 0x0000000300000000-0x000000037fffffff]
+Mär 10 18:21:05 vrracer kernel:   node   7: [mem 0x0000000380000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 0 [mem 0x0000000000000000-0x000000007fffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 1 [mem 0x0000000080000000-0x00000000ffffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 2 [mem 0x0000000100000000-0x000000017fffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 3 [mem 0x0000000180000000-0x00000001ffffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 4 [mem 0x0000000200000000-0x000000027fffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 5 [mem 0x0000000280000000-0x00000002ffffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 6 [mem 0x0000000300000000-0x000000037fffffff]
+Mär 10 18:21:05 vrracer kernel: Initmem setup node 7 [mem 0x0000000380000000-0x00000003ffffffff]
+Mär 10 18:21:05 vrracer kernel: On node 0, zone DMA: 512 pages in unavailable ranges
+Mär 10 18:21:05 vrracer kernel: psci: probing for conduit method from DT.
